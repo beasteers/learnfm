@@ -22,7 +22,7 @@
 #include "fm_op_kernel.h"
 #include "fm_core.h"
 
-using namespace std;
+//using namespace std;
 
 struct FmOperatorInfo {
   int in;

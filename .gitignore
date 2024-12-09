@@ -2,4 +2,4 @@
 *.pyc
 patches
 dx7core/build
-
+*.egg-info
