@@ -17,8 +17,9 @@
 // Create a WAV file
 
 #include "wavout.h"
-
-using namespace std;
+// #include <stdint.h>
+// using namespace std;
+using std::fstream;
 
 void w32le(char *buf, int offset, int32_t val) {
   buf[offset + 0] = val & 0xff;

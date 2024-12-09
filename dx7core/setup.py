@@ -7,7 +7,7 @@ sources.remove("main.cc")
 sources.remove("test_ringbuffer.cc")
 sources.remove("test_filter.cc")
 sources.remove("test_neon.cc")
-os.environ["CC"] = "gcc"
+os.environ["CC"] = "clang"
 os.environ["CXX"] = "clang++"
 
 extension_mod = Extension("dx7", sources=sources) #["pydx7.cc"])

@@ -55,7 +55,12 @@ short * render(unsigned short patch, unsigned char midinote, unsigned char veloc
     for (int j = 0; j < N; j++) {
       buf[j] >>= 2;
     }
-    write_data(buf, out, &out_ptr, N);
+    // write_data(buf, out, &out_ptr, N);
+    if (out_ptr + N <= samples) {  // Check if there's enough space
+      write_data(buf, out, &out_ptr, N);
+    } else {
+      // Handle out of space situation, e.g., truncate or handle error
+    }
   }
   return out;
 }

@@ -18,6 +18,8 @@
 #include <iostream>
 #endif
 #include <math.h>
+// #include <string>
+#include <cstddef>
 #include "synth.h"
 #include "freqlut.h"
 #include "patch.h"
@@ -25,7 +27,9 @@
 #include "controllers.h"
 #include "dx7note.h"
 
-//using namespace std;
+// using namespace std;
+// using std::max;
+// using std::min;
 
 int32_t midinote_to_logfreq(int midinote) {
   const int base = 50857777;  // (1 << 24) * (log(440) / log(2) - 69/12)
